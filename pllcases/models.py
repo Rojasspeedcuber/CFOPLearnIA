@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class PLL_Cases(models.Model):
+    id = models.AutoField(primary_key=True)
+    cases = models.CharField(max_length=3)
+    algorithm = models.CharField(max_length=100)
