@@ -7,3 +7,6 @@ class PLL_Cases(models.Model):
     algorithm = models.CharField(max_length=100)
     alternative_algorithm = models.CharField(max_length=100)
     setup = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.cases
